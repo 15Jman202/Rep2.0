@@ -11,6 +11,10 @@
 		D0F0B36D1D7E004800D37ABB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F0B36B1D7E004800D37ABB /* Main.storyboard */; };
 		D0F0B36F1D7E004800D37ABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0F0B36E1D7E004800D37ABB /* Assets.xcassets */; };
 		D0F0B3721D7E004800D37ABB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F0B3701D7E004800D37ABB /* LaunchScreen.storyboard */; };
+		D0F0B37A1D7E011000D37ABB /* RepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F0B3791D7E011000D37ABB /* RepViewController.swift */; };
+		D0F0B37C1D7E011800D37ABB /* Rep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F0B37B1D7E011800D37ABB /* Rep.swift */; };
+		D0F0B37E1D7E011F00D37ABB /* RepController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F0B37D1D7E011F00D37ABB /* RepController.swift */; };
+		D0F0B3821D7E014000D37ABB /* StateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F0B3811D7E014000D37ABB /* StateTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		D0F0B36E1D7E004800D37ABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0F0B3711D7E004800D37ABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0F0B3731D7E004800D37ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0F0B3791D7E011000D37ABB /* RepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepViewController.swift; sourceTree = "<group>"; };
+		D0F0B37B1D7E011800D37ABB /* Rep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rep.swift; sourceTree = "<group>"; };
+		D0F0B37D1D7E011F00D37ABB /* RepController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepController.swift; sourceTree = "<group>"; };
+		D0F0B3811D7E014000D37ABB /* StateTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StateTableViewController.swift; path = ../StateTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +60,41 @@
 		D0F0B3661D7E004800D37ABB /* Rep2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				D0F0B3671D7E004800D37ABB /* AppDelegate.swift */,
+				D0F0B3851D7E017300D37ABB /* Model */,
+				D0F0B3841D7E015D00D37ABB /* Model Controller */,
+				D0F0B3831D7E014C00D37ABB /* View Controllers */,
 				D0F0B36B1D7E004800D37ABB /* Main.storyboard */,
 				D0F0B36E1D7E004800D37ABB /* Assets.xcassets */,
 				D0F0B3701D7E004800D37ABB /* LaunchScreen.storyboard */,
+				D0F0B3671D7E004800D37ABB /* AppDelegate.swift */,
 				D0F0B3731D7E004800D37ABB /* Info.plist */,
 			);
 			path = Rep2.0;
+			sourceTree = "<group>";
+		};
+		D0F0B3831D7E014C00D37ABB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0F0B3811D7E014000D37ABB /* StateTableViewController.swift */,
+				D0F0B3791D7E011000D37ABB /* RepViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D0F0B3841D7E015D00D37ABB /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D0F0B37D1D7E011F00D37ABB /* RepController.swift */,
+			);
+			name = "Model Controller";
+			sourceTree = "<group>";
+		};
+		D0F0B3851D7E017300D37ABB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0F0B37B1D7E011800D37ABB /* Rep.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,7 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0F0B3821D7E014000D37ABB /* StateTableViewController.swift in Sources */,
+				D0F0B37A1D7E011000D37ABB /* RepViewController.swift in Sources */,
+				D0F0B37E1D7E011F00D37ABB /* RepController.swift in Sources */,
 				D0F0B3681D7E004800D37ABB /* AppDelegate.swift in Sources */,
+				D0F0B37C1D7E011800D37ABB /* Rep.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
