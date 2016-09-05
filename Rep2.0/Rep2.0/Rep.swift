@@ -10,7 +10,6 @@ import Foundation
 
 class Representative {
     
-    private let kResultsDictionary = "results"
     private let kName = "name"
     private let kState = "state"
     private let kParty = "party"

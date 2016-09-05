@@ -25,9 +25,9 @@ class RepresentativeController {
                 return
             }
             
-            guard let data = data, JSONDictionary = (try? NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)) as? [[String: AnyObject]] else { completion(reps: []); return }
+            guard let data = data, JSONDictionary = (try? NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)) as? [String: AnyObject], resultsDictionary = JSONDictionary["results"] as? [[String: AnyObject]] else { completion(reps: []); return }
             
-            let reps = JSONDictionary.flatMap({ Representative(dictionary: $0) })
+            let reps = resultsDictionary.flatMap({ Representative(dictionary: $0) })
             
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 completion(reps: reps)

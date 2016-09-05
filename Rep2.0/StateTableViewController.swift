@@ -33,7 +33,7 @@ class StateTableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        guard segue.identifier == "toDetailView", let RepDC = segue.destinationViewController as? RepViewController else { return }
+        guard segue.identifier == "toDetailView", let RepDC = segue.destinationViewController as? RepsTableViewController else { return }
         
         guard let index = tableView.indexPathForSelectedRow else { return }
         
